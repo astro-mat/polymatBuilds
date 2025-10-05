@@ -9,4 +9,5 @@ collections:
   builds:
     output: true
     permalink: /builds/:title/
-
+    source: _builds
+  
