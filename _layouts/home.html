@@ -30,8 +30,36 @@
 
   <!-- Page content -->
   <main class="container my-5">
-    {{ content }}
+    <div class="text-center mb-5">
+      <h1>P O L Y M A T – Builds</h1>
+      <p class="lead text-muted">Handmade projects by <strong>Mat Warren</strong>.</p>
+      <a href="{{ '/builds' | relative_url }}" class="btn btn-outline-dark mt-3">View All Builds</a>
+    </div>
+
+    <h2 class="mb-4 fw-semibold">Recent Projects</h2>
+    <div class="row g-4">
+      {% assign recent = site.builds | slice: 0,3 %}
+      {% for build in recent %}
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <a href="{{ build.url | relative_url }}" class="text-decoration-none text-dark">
+              {% if build.image %}
+                <img src="{{ build.image | relative_url }}" class="card-img-top" alt="{{ build.title }}">
+              {% endif %}
+              <div class="card-body">
+                <h5 class="card-title">{{ build.title }}</h5>
+                <p class="card-text text-muted">{{ build.description }}</p>
+              </div>
+            </a>
+            {% if build.link %}
+              <a href="{{ build.link }}" target="_blank" class="btn btn-info mt-2">View Project</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   </main>
+
 
   <!-- Footer -->
   <footer class="text-center py-4 border-top border-secondary mt-5">
