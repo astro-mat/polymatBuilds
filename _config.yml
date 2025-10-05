@@ -1,5 +1,6 @@
 title: "P O L Y M A T – Builds"
 description: "A portfolio of handmade furniture, synths, and electronics by Mat Warren."
+url: "https://astro-mat.github.io"
 baseurl: "/polymatBuilds"
 markdown: kramdown
 theme: minima
