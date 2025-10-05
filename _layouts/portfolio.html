@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<section class="text-center">
+  <h2 class="portfolio-title mb-5">{{ page.title | upcase }}</h2>
+  <div class="row justify-content-center g-4">
+    {% for item in site[page.collection] %}
+    <div class="col-12 col-md-4">
+      <div class="card bg-dark text-white border-secondary hover-glow h-100">
+        <img src="{{ item.image }}" class="card-img-top" alt="{{ item.title }}">
+        <div class="card-body">
+          <h3 class="card-title text-info">{{ item.title }}</h3>
+          <p class="card-text">{{ item.description }}</p>
+          {% if item.link %}
+          <a href="{{ item.link }}" target="_blank" class="btn btn-info mt-3">View</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

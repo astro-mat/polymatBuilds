@@ -1,0 +1,29 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+h1.site-title {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0.5em;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0cc;
+}
+
+.portfolio-title {
+  color: #0ff;
+  text-shadow: 0 0 8px rgba(0,255,255,0.6);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.hover-glow {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.hover-glow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,255,255,0.6);
+}
