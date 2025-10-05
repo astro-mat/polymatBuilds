@@ -1,7 +1,8 @@
 title: "P O L Y M A T – Builds"
-description: "A portfolio of custom studio furniture, synths, and electronics by Mat Warren."
+description: "A portfolio of handmade furniture, synths, and electronics by Mat Warren."
 collections:
   builds:
     output: true
+    permalink: /builds/:title/
 markdown: kramdown
 theme: minima

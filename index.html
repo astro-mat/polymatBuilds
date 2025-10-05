@@ -1,5 +1,35 @@
 ---
-layout: portfolio
-title: "Builds Portfolio"
-collection: builds
+layout: home
+title: "Home"
 ---
+
+<section class="container my-5">
+  <div class="text-center mb-5">
+    <h1 class="fw-bold mb-3">P O L Y M A T – Builds</h1>
+    <p class="lead text-muted">Handmade projects by <strong>Mat Warren</strong> — exploring the boundaries between sound, structure, and design.</p>
+  </div>
+
+  <div class="text-center mb-5">
+    <a href="/builds" class="btn btn-outline-dark">View All Builds</a>
+  </div>
+
+  <h2 class="mb-4 fw-semibold">Recent Projects</h2>
+  <div class="row g-4">
+    {% assign recent = site.builds | sort: 'date' | reverse | slice: 0,3 %}
+    {% for build in recent %}
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <a href="{{ build.url }}" class="text-decoration-none text-dark">
+            {% if build.image %}
+              <img src="{{ build.image }}" class="card-img-top" alt="{{ build.title }}">
+            {% endif %}
+            <div class="card-body">
+              <h5 class="card-title">{{ build.title }}</h5>
+              <p class="card-text text-muted">{{ build.description }}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

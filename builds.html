@@ -1,5 +1,53 @@
 ---
 layout: portfolio
-title: Builds
-collection: builds
+title: "All Builds"
 ---
+
+<section class="container my-5">
+  <h1 class="fw-bold mb-4 text-center">All Builds</h1>
+
+  <!-- Category Filter Buttons -->
+  <div class="text-center mb-5">
+    <button class="btn btn-outline-dark m-1 filter-btn active" data-filter="all">All</button>
+    {% assign categories = site.builds | map: "category" | uniq | sort %}
+    {% for cat in categories %}
+      <button class="btn btn-outline-dark m-1 filter-btn" data-filter="{{ cat | downcase }}">{{ cat }}</button>
+    {% endfor %}
+  </div>
+
+  <!-- Project Cards -->
+  <div class="row g-4">
+    {% for build in site.builds %}
+      <div class="col-md-4 build-item" data-category="{{ build.category | downcase }}">
+        <div class="card h-100 border-0 shadow-sm">
+          <a href="{{ build.url }}" class="text-decoration-none text-dark">
+            {% if build.image %}
+              <img src="{{ build.image }}" class="card-img-top" alt="{{ build.title }}">
+            {% endif %}
+            <div class="card-body">
+              <h5 class="card-title">{{ build.title }}</h5>
+              <p class="card-text text-muted">{{ build.description }}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+  const buttons = document.querySelectorAll('.filter-btn');
+  const items = document.querySelectorAll('.build-item');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+      items.forEach(item => {
+        item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
+      });
+    });
+  });
+</script>

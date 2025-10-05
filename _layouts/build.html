@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<section class="container my-5">
+  <h1 class="fw-bold mb-3">{{ page.title }}</h1>
+  <p class="text-muted mb-4">{{ page.category }}</p>
+
+  {% if page.image %}
+    <img src="{{ page.image }}" class="img-fluid rounded mb-4" alt="{{ page.title }}">
+  {% endif %}
+
+  <div class="lead">
+    {{ content }}
+  </div>
+
+  <a href="/builds" class="btn btn-outline-dark mt-4">← Back to all builds</a>
+</section>
