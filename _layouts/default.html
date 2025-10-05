@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
-<body>
-  <header class="py-4 mb-4 border-bottom">
-    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-      <h1 class="h3 mb-0 fw-bold">{{ site.title }}</h1>
-      <nav>
-        <a href="{{ '/' | relative_url }}" class="nav-link d-inline px-2 text-muted">Home</a>
-        <a href="{{ '/about.html' | relative_url }}" class="nav-link d-inline px-2 text-muted">About</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | P O L Y M A T – Builds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+
+  <body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- 🌐 Sticky Header -->
+    <header class="border-bottom bg-white shadow-sm sticky-top">
+      <nav class="container navbar navbar-expand-md navbar-light py-3">
+        <a class="navbar-brand fw-bold text-uppercase letter-space" href="{{ '/' | relative_url }}">
+          P O L Y M A T
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link {% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if page.url contains '/builds' %}active{% endif %}" href="{{ '/builds' | relative_url }}">Builds</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main class="container mb-5">
-    {{ content }}
-  </main>
+    <!-- 🧩 Main Content -->
+    <main class="flex-grow-1 py-5">
+      {{ content }}
+    </main>
 
-  <footer class="text-center py-4 border-top text-muted small">
-    © 2025 Mat Warren — P O L Y M A T Builds
-  </footer>
-</body>
+    <!-- ⚙️ Footer -->
+    <footer class="border-top py-4 mt-auto bg-white">
+      <div class="container text-center text-muted small">
+        <p class="mb-1">© {{ site.time | date: "%Y" }} Mat Warren – P O L Y M A T Builds</p>
+        <p class="mb-0">
+          <a href="mailto:you@email.com" class="text-muted text-decoration-none">Contact</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
