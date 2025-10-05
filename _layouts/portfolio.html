@@ -12,7 +12,7 @@ layout: default
     <div class="row g-4 mb-5">
       {% for build in group.items %}
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 bg-dark text-light shadow-sm border-0">
+          <!-- <div class="card h-100 bg-dark text-light shadow-sm border-0">
             {% if build.image %}
               <img src="{{ build.image | relative_url }}" class="card-img-top" alt="{{ build.title }}">
             {% endif %}
@@ -23,7 +23,16 @@ layout: default
                 <a href="{{ build.link }}" target="_blank" class="btn btn-outline-info btn-sm mt-2">View Project</a>
               {% endif %}
             </div>
+          </div> -->
+        <div class="card h-100 bg-dark text-light shadow-sm border-0">
+          {% if build.image %}
+            <img src="{{ build.image | relative_url }}" class="card-img-top" alt="{{ build.title }}">
+          {% endif %}
+          <div class="card-body">
+            <h5 class="card-title text-info">{{ build.title }}</h5>
+            <p class="card-text text-muted">{{ build.description }}</p>
           </div>
+        </div>
         </div>
       {% endfor %}
     </div>
