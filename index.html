@@ -1,12 +1,12 @@
 ---
-layout: home
+layout: default
 title: Home
 ---
-<!-- index.html -->
 <section class="container my-5">
   <div class="text-center mb-5">
     <h1>P O L Y M A T – Builds</h1>
     <p class="lead text-muted">Handmade projects by <strong>Mat Warren</strong>.</p>
+    <a href="{{ '/builds/' | relative_url }}" class="btn btn-outline-info btn-lg">View All Builds</a>
   </div>
 
   <h2 class="mb-4 fw-semibold">Recent Projects</h2>
@@ -14,13 +14,13 @@ title: Home
     {% assign recent = site.builds | sort: 'date' | reverse | slice: 0,3 %}
     {% for build in recent %}
       <div class="col-md-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <a href="{{ build.url }}" class="text-decoration-none text-dark">
+        <div class="card h-100 border-0 shadow-sm bg-dark text-light">
+          <a href="{{ build.url | relative_url }}" class="text-decoration-none text-light">
             {% if build.image %}
-              <img src="{{ build.image }}" class="card-img-top" alt="{{ build.title }}">
+              <img src="{{ build.image | relative_url }}" class="card-img-top" alt="{{ build.title }}">
             {% endif %}
             <div class="card-body">
-              <h5 class="card-title">{{ build.title }}</h5>
+              <h5 class="card-title text-info">{{ build.title }}</h5>
               <p class="card-text text-muted">{{ build.description }}</p>
             </div>
           </a>
