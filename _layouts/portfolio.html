@@ -8,7 +8,7 @@ layout: default
   <!-- Filter buttons -->
   <div class="text-center mb-4">
     <button class="btn btn-outline-info btn-sm m-1 filter-btn active" data-filter="all">All</button>
-    {% assign categories = site.builds | map: "category" | uniq | sort %}
+    {% assign categories = site.builds | map: "category" | compact | uniq | sort %}
     {% for cat in categories %}
       <button class="btn btn-outline-info btn-sm m-1 filter-btn" data-filter="{{ cat | downcase }}">{{ cat }}</button>
     {% endfor %}
