@@ -2,7 +2,7 @@
 title: "Mosrite Copy Guitar"
 image: "/assets/images/MosriteCopyGuitar/MosriteCopyGuitar_3.jpg"
 description: "A home made copy of a Mosrite Ventures guitar"
-link: "https://github.com/polymat/Mosrite-Guitar-Copy"
+link: "https://astro-mat.github.io/polymatBuilds/Mosrite-Guitar-Copy"
 category: "Instruments"
 ---
 I have always loved the shape of the old Mosrite guitars. I guess it started with an image of Kurt Cobain with his univox hi-flyer. This guitar had been on the drawing board for many years back when I had no workshop and could only dream of building it. Years later I found myself living in Ireland and had available the use of a workshop. I jumped at the chance to create the guitar of my dreams.
