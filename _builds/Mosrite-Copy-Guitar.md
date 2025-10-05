@@ -1,6 +1,7 @@
 ---
 layout: build
 title: "Mosrite Copy Guitar"
+date: 2024-03-15
 image: "/assets/images/MosriteCopyGuitar/MosriteCopyGuitar_3.jpg"
 description: "A home made copy of a Mosrite Ventures guitar"
 category: "Instruments"
