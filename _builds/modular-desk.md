@@ -1,6 +1,7 @@
 ---
 title: "Modular Desk"
 image: "/assets/images/modular-desk.jpg"
-description: "A handmade modular studio desk designed to house synths, rack gear, and patch bays."
+description: "A custom modular studio desk designed for synths, patch bays, and rack gear."
 link: "https://github.com/polymat/modular-desk"
+category: "Furniture"
 ---

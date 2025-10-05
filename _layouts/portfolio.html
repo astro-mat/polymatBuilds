@@ -3,21 +3,29 @@ layout: default
 ---
 
 <h2 class="text-center mb-5 fw-semibold">{{ page.title }}</h2>
-<div class="row g-4 justify-content-center">
-  {% for build in site.builds %}
-  <div class="col-12 col-md-6 col-lg-4">
-    <div class="card h-100 shadow-sm border-0">
-      {% if build.image %}
-      <img src="{{ build.image }}" class="card-img-top" alt="{{ build.title }}">
-      {% endif %}
-      <div class="card-body">
-        <h5 class="card-title">{{ build.title }}</h5>
-        <p class="card-text text-muted">{{ build.description }}</p>
-        {% if build.link %}
-        <a href="{{ build.link }}" class="btn btn-outline-dark btn-sm" target="_blank">View Project</a>
-        {% endif %}
+
+{% assign grouped_builds = site.builds | group_by: "category" %}
+
+{% for group in grouped_builds %}
+  <section class="mb-5">
+    <h3 class="mb-4 border-bottom pb-2 text-uppercase fs-5 fw-semibold">{{ group.name }}</h3>
+    <div class="row g-4">
+      {% for build in group.items %}
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          {% if build.image %}
+          <img src="{{ build.image }}" class="card-img-top" alt="{{ build.title }}">
+          {% endif %}
+          <div class="card-body">
+            <h5 class="card-title">{{ build.title }}</h5>
+            <p class="card-text text-muted">{{ build.description }}</p>
+            {% if build.link %}
+            <a href="{{ build.link }}" class="btn btn-outline-dark btn-sm" target="_blank">View Project</a>
+            {% endif %}
+          </div>
+        </div>
       </div>
+      {% endfor %}
     </div>
-  </div>
-  {% endfor %}
-</div>
+  </section>
+{% endfor %}
