@@ -6,3 +6,6 @@ collections:
     permalink: /builds/:title/
 markdown: kramdown
 theme: minima
+collections:
+  builds:
+    output: true
