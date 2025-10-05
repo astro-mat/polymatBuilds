@@ -1,0 +1,34 @@
+---
+layout: default
+title: Contact
+---
+<section class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <h1 class="fw-bold mb-3 text-center">Contact Us</h1>
+      <p class="text-muted text-center mb-4">
+        Get in touch with us if you have any questions. We look forward to hearing from you.
+      </p>
+
+      <form id="contact-form" action="https://formspree.io/f/xeorkebr" method="POST" class="bg-dark p-4 rounded shadow-sm">
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea name="message" id="message" class="form-control" placeholder="Type your message here..." rows="5" required></textarea>
+        </div>
+
+        <p class="text-muted small mb-3">
+          By clicking Send, I agree that Studio Moo Moo processes my message and personal data to contact me.
+        </p>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-outline-info btn-lg">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
