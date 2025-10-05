@@ -7,3 +7,4 @@ collections:
   builds:
     output: true
     permalink: /builds/:title/
+
