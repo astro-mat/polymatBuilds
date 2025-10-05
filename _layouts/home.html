@@ -43,21 +43,21 @@
     <p class="lead mb-4 text-light">
       Handmade projects by <strong>Mat Warren</strong> — exploring the boundaries between sound, structure, and design.
     </p>
-    <a href="{{ site.baseurl }}/builds/" class="btn btn-outline-info btn-lg">View All Builds</a>
+    
   </section>
 
   <!-- About Section -->
-  <section class="container py-5">
-    <h2 class="text-info fw-bold mb-3 text-center">About</h2>
+  <section class="container py-5"> 
     <p class="text-light lead text-center" style="max-width: 800px; margin: 0 auto;">
       I create handmade furniture, synths, and electronics that explore the intersection of design and functionality.
       Each build is carefully crafted to combine aesthetics, ergonomics, and sound in a way that feels unique and personal.
     </p>
+    <a href="{{ site.baseurl }}/builds/" class="btn btn-outline-info btn-lg">View All Builds</a>
   </section>
 
   <!-- Recent Projects -->
   <section class="container py-5">
-    <h2 class="mb-4 text-info fw-bold text-center">Recent Projects</h2>
+    <h2 class="mb-4 text-info fw-bold text-center">Recent Builds</h2>
     <div class="row g-4">
       {% assign recent = site.builds | sort: 'date' | reverse | slice: 0,3 %}
       {% for build in recent %}
