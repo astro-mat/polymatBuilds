@@ -1,4 +1,5 @@
-title: "P O L Y M A T"
+title: "P O L Y M A T – Builds"
+description: "A portfolio of custom studio furniture, electronics, and instrument builds by Mat Warren."
 collections:
   builds:
     output: true

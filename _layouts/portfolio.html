@@ -2,22 +2,22 @@
 layout: default
 ---
 
-<section class="text-center">
-  <h2 class="portfolio-title mb-5">{{ page.title | upcase }}</h2>
-  <div class="row justify-content-center g-4">
-    {% for item in site[page.collection] %}
-    <div class="col-12 col-md-4">
-      <div class="card bg-dark text-white border-secondary hover-glow h-100">
-        <img src="{{ item.image }}" class="card-img-top" alt="{{ item.title }}">
-        <div class="card-body">
-          <h3 class="card-title text-info">{{ item.title }}</h3>
-          <p class="card-text">{{ item.description }}</p>
-          {% if item.link %}
-          <a href="{{ item.link }}" target="_blank" class="btn btn-info mt-3">View</a>
-          {% endif %}
-        </div>
+<h2 class="text-center mb-5 fw-semibold">{{ page.title }}</h2>
+<div class="row g-4 justify-content-center">
+  {% for build in site.builds %}
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm border-0">
+      {% if build.image %}
+      <img src="{{ build.image }}" class="card-img-top" alt="{{ build.title }}">
+      {% endif %}
+      <div class="card-body">
+        <h5 class="card-title">{{ build.title }}</h5>
+        <p class="card-text text-muted">{{ build.description }}</p>
+        {% if build.link %}
+        <a href="{{ build.link }}" class="btn btn-outline-dark btn-sm" target="_blank">View Project</a>
+        {% endif %}
       </div>
     </div>
-    {% endfor %}
   </div>
-</section>
+  {% endfor %}
+</div>

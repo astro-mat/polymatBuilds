@@ -1,29 +1,26 @@
 body {
-  background: #000;
-  color: #fff;
   font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
 }
 
-h1.site-title {
-  font-size: 3rem;
-  font-weight: 900;
-  letter-spacing: 0.5em;
-  color: #fff;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px #0ff, 0 0 20px #0cc;
+h1, h2, h3, h5 {
+  letter-spacing: 0.05em;
 }
 
-.portfolio-title {
-  color: #0ff;
-  text-shadow: 0 0 8px rgba(0,255,255,0.6);
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
+.card img {
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.hover-glow {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.hover-glow:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0,255,255,0.6);
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #fff;
 }
