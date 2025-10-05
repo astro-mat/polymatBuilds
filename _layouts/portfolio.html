@@ -5,9 +5,19 @@ layout: default
 <section class="container my-5">
   <h1 class="text-center mb-5 fw-bold">{{ page.title }}</h1>
 
-  <div class="row g-4">
+  <!-- Filter buttons -->
+  <div class="text-center mb-4">
+    <button class="btn btn-outline-info btn-sm m-1 filter-btn active" data-filter="all">All</button>
+    {% assign categories = site.builds | map: "category" | uniq | sort %}
+    {% for cat in categories %}
+      <button class="btn btn-outline-info btn-sm m-1 filter-btn" data-filter="{{ cat | downcase }}">{{ cat }}</button>
+    {% endfor %}
+  </div>
+
+  <!-- Build cards -->
+  <div class="row g-4 build-list">
     {% for build in site.builds %}
-      <div class="col-12 col-md-6 col-lg-4">
+      <div class="col-12 col-md-6 col-lg-4 build-item" data-category="{{ build.category | downcase }}">
         <div class="card h-100 bg-secondary text-light shadow-sm border-0">
           <a href="{{ build.url | relative_url }}" class="text-decoration-none text-light">
             {% if build.image %}
@@ -23,3 +33,19 @@ layout: default
     {% endfor %}
   </div>
 </section>
+
+<script>
+  const buttons = document.querySelectorAll('.filter-btn');
+  const items = document.querySelectorAll('.build-item');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      items.forEach(item => {
+        item.style.display = filter === 'all' || item.dataset.category === filter ? '' : 'none';
+      });
+    });
+  });
+</script>
