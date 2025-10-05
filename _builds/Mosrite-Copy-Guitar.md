@@ -1,4 +1,5 @@
 ---
+layout: build
 title: "Mosrite Copy Guitar"
 image: "/assets/images/MosriteCopyGuitar/MosriteCopyGuitar_3.jpg"
 description: "A home made copy of a Mosrite Ventures guitar"
