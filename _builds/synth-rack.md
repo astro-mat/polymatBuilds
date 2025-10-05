@@ -1,4 +1,5 @@
 ---
+layout: build
 title: "Custom Synth Rack"
 image: "/assets/images/synth-rack.jpg"
 date: 2024-03-15

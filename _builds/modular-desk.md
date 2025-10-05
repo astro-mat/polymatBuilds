@@ -1,4 +1,5 @@
 ---
+layout: build
 title: "Modular Desk"
 image: "/assets/images/modular-desk.jpg"
 date: 2024-03-15

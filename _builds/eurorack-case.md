@@ -1,4 +1,5 @@
 ---
+layout: build
 title: "Eurorack Case"
 image: "/assets/images/eurorack-case.jpg"
 date: 2024-03-15
