@@ -1,4 +1,3 @@
-<!-- _layouts/default.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,64 +8,37 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
 
-  <body class="d-flex flex-column min-vh-100 bg-light">
+  <body class="bg-dark text-light d-flex flex-column min-vh-100">
 
-    <!-- 🌐 Sticky Header -->
-<header class="main-header fixed-top bg-white bg-opacity-90 backdrop-blur border-bottom shadow-sm">
-  <nav class="container navbar navbar-expand-md navbar-light py-3">
-    <a class="navbar-brand fw-bold text-uppercase letter-space" href="{{ '/' | relative_url }}">
-      P O L Y M A T
-    </a>
+    <!-- Header -->
+    <header class="bg-black py-3 shadow-sm">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="{{ '/' | relative_url }}" class="text-white fw-bold fs-3 text-decoration-none">P O L Y M A T – Builds</a>
+        <nav>
+          <a href="{{ '/' | relative_url }}" class="text-white me-3">Home</a>
+          <a href="{{ '/builds' | relative_url }}" class="text-white">All Builds</a>
+        </nav>
+      </div>
+    </header>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- Spacer for fixed header if needed -->
+    <div style="height: 70px;"></div>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link {% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {% if page.url contains '/builds' %}active{% endif %}" href="{{ '/builds' | relative_url }}">Builds</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<!-- add a spacer so content isn't hidden under navbar -->
-<div style="height: 80px;"></div>
-
-
-    <!-- 🧩 Main Content -->
-    <main class="flex-grow-1 py-5">
+    <!-- Main content -->
+    <main class="flex-grow-1">
       {{ content }}
     </main>
 
-    <!-- ⚙️ Footer -->
-    <footer class="border-top py-4 mt-auto bg-white">
-      <div class="container text-center text-muted small">
+    <!-- Footer -->
+    <footer class="bg-black text-light py-4 mt-auto">
+      <div class="container text-center small">
         <p class="mb-1">© {{ site.time | date: "%Y" }} Mat Warren – P O L Y M A T Builds</p>
         <p class="mb-0">
-          <a href="mailto:you@email.com" class="text-muted text-decoration-none">Contact</a>
+          <a href="mailto:you@email.com" class="text-light text-decoration-none">Contact</a>
         </p>
       </div>
     </footer>
 
-      <!-- Sticky header scroll effect -->
-    <script>
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 20) {
-        document.body.classList.add('scrolled');
-      } else {
-        document.body.classList.remove('scrolled');
-      }
-    });
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    
   </body>
 </html>
