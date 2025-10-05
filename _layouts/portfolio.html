@@ -1,32 +1,31 @@
-<!-- _layouts/portfolio.html -->
 ---
 layout: default
 ---
 
-<h2 class="text-center mb-5 fw-semibold">{{ page.title }}</h2>
+<section class="container py-5">
+  <h1 class="text-center fw-bold mb-5">{{ page.title }}</h1>
 
-{% assign grouped_builds = site.builds | group_by: "category" %}
+  {% assign grouped_builds = site.builds | group_by: "category" %}
 
-{% for group in grouped_builds %}
-  <section class="mb-5">
-    <h3 class="mb-4 border-bottom pb-2 text-uppercase fs-5 fw-semibold">{{ group.name }}</h3>
-    <div class="row g-4">
+  {% for group in grouped_builds %}
+    <h2 class="text-info text-uppercase mb-4">{{ group.name }}</h2>
+    <div class="row g-4 mb-5">
       {% for build in group.items %}
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          {% if build.image %}
-          <img src="{{ build.image }}" class="card-img-top" alt="{{ build.title }}">
-          {% endif %}
-          <div class="card-body">
-            <h5 class="card-title">{{ build.title }}</h5>
-            <p class="card-text text-muted">{{ build.description }}</p>
-            {% if build.link %}
-            <a href="{{ build.link }}" class="btn btn-outline-dark btn-sm" target="_blank">View Project</a>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-light shadow-sm border-0">
+            {% if build.image %}
+              <img src="{{ build.image | relative_url }}" class="card-img-top" alt="{{ build.title }}">
             {% endif %}
+            <div class="card-body">
+              <h5 class="card-title text-info">{{ build.title }}</h5>
+              <p class="card-text text-muted">{{ build.description }}</p>
+              {% if build.link %}
+                <a href="{{ build.link }}" target="_blank" class="btn btn-outline-info btn-sm mt-2">View Project</a>
+              {% endif %}
+            </div>
           </div>
         </div>
-      </div>
       {% endfor %}
     </div>
-  </section>
-{% endfor %}
+  {% endfor %}
+</section>
