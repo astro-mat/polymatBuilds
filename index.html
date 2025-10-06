@@ -2,7 +2,7 @@
 layout: home
 title: Home
 ---
-<section class="container my-5">
+<!-- <section class="container my-5">
   <div class="text-center mb-5">
     <h1>P O L Y M A T – Builds</h1>
     <p class="lead text-muted">Handmade projects by <strong>Mat Warren</strong>.</p>
@@ -28,4 +28,47 @@ title: Home
       </div>
     {% endfor %}
   </div>
+</section> -->
+
+
+<!-- Hero Section -->
+<section class="text-center py-5">
+  <h1 class="display-4 fw-bold mb-3 text-info">P O L Y M A T – Builds</h1>
 </section>
+
+<!-- About Section -->
+<section class="container py-5"> 
+  <p class="text-light lead text-center" style="max-width: 800px; margin: 0 auto;">
+    I create handmade furniture, synths, and electronics that explore the intersection of design and functionality.
+    Each build is carefully crafted to combine aesthetics, ergonomics, and sound in a way that feels unique and personal.
+  </p>
+  <div class="text-center mt-5">
+    <a href="{{ site.baseurl }}/builds/" class="btn btn-outline-info btn-lg">View All Builds</a>
+  </div>
+</section>
+
+<!-- Recent Projects -->
+<section class="container py-5">
+  <h2 class="mb-4 text-info fw-bold text-center">Recent Builds</h2>
+  <div class="row g-4">
+    {% assign recent = site.builds | sort: 'date' | reverse | slice: 0,3 %}
+    {% for build in recent %}
+      {% unless build.title == "All Builds" %}
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 bg-dark text-light">
+            <a href="{{ build.url | relative_url }}" class="text-decoration-none text-light">
+              {% if build.image %}
+                <img src="{{ build.image | relative_url }}" class="card-img-top" alt="{{ build.title }}">
+              {% endif %}
+              <div class="card-body">
+                <h5 class="card-title text-info">{{ build.title }}</h5>
+                <p class="card-text text-muted">{{ build.description }}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</section>
+

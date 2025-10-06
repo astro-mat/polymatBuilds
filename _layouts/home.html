@@ -37,13 +37,16 @@
   <!-- Spacer for fixed navbar -->
   <div style="height: 70px;"></div>
 
+  <!-- Page content gets injected here -->
+  {{ content }}
+
   <!-- Hero Section -->
-  <section class="text-center py-5">
+  <!-- <section class="text-center py-5">
     <h1 class="display-4 fw-bold mb-3 text-info">P O L Y M A T – Builds</h1>
-  </section>
+  </section> -->
 
   <!-- About Section -->
-  <section class="container py-5"> 
+  <!-- <section class="container py-5"> 
     <p class="text-light lead text-center" style="max-width: 800px; margin: 0 auto;">
       I create handmade furniture, synths, and electronics that explore the intersection of design and functionality.
       Each build is carefully crafted to combine aesthetics, ergonomics, and sound in a way that feels unique and personal.
@@ -51,10 +54,10 @@
     <div class="text-center mt-5">
       <a href="{{ site.baseurl }}/builds/" class="btn btn-outline-info btn-lg">View All Builds</a>
     </div>
-  </section>
+  </section> -->
 
   <!-- Recent Projects -->
-  <section class="container py-5">
+  <!-- <section class="container py-5">
     <h2 class="mb-4 text-info fw-bold text-center">Recent Builds</h2>
     <div class="row g-4">
       {% assign recent = site.builds | sort: 'date' | reverse | slice: 0,3 %}
@@ -74,7 +77,7 @@
         </div>
       {% endfor %}
     </div>
-  </section>
+  </section> -->
 
   <!-- Footer -->
   <footer class="text-center py-4 mt-5 border-top border-secondary">
