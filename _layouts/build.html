@@ -8,7 +8,7 @@ layout: home
   <header class="mb-5">
     <h1 class="fw-bold display-5 text-info mb-2">{{ page.title }}</h1>
     {% if page.category %}
-      <p class="text-uppercase text-muted small letter-spacing-1">{{ page.category }}</p>
+      <p class="text-uppercase small letter-spacing-1">{{ page.category }}</p>
     {% endif %}
     <hr class="border-secondary opacity-50">
   </header>
@@ -66,34 +66,7 @@ layout: home
 
 </section>
 
-<style>
-  .letter-spacing-1 { letter-spacing: 0.1em; }
 
-  img.img-fluid {
-    max-height: 70vh;
-    object-fit: cover;
-  }
-
-  .gallery-img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .gallery-img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 10px rgba(13, 202, 240, 0.3);
-  }
-
-  a.btn-outline-info:hover {
-    background-color: #0dcaf0;
-    color: #000;
-    transition: all 0.3s ease;
-  }
-
-  hr {
-    width: 60px;
-    border-width: 2px;
-  }
-</style>
 
 <!-- Optional Lightbox JS (simple built-in) -->
 <script>
