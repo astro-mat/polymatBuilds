@@ -1,6 +1,6 @@
 ---
 layout: build
-title: "revolving Remote Control Magazine"
+title: "Revolving Remote Control Magazine"
 date: 2025-09-24
 image: "/assets/images/RemoteControlMagazine/RemoteControlMagazine.jpg"
 description: "A handy organiser for your remote controls"
