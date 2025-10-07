@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<!-- _layouts/portfolio.html -->
+
 <section class="bg-dark container my-5">
   <h1 class="text-center mb-5 fw-bold">{{ page.title }}</h1>
 
@@ -21,7 +21,9 @@ layout: default
         <div class="card h-100 bg-secondary text-light shadow-sm border-0">
           <a href="{{ build.url | relative_url }}" class="text-decoration-none text-light">
             {% if build.image %}
-              <img src="{{ build.image | relative_url }}" class="card-img-top img-fluid" alt="{{ build.title }}">
+              <div class="card-img-wrapper">
+                <img src="{{ build.image | relative_url }}" class="card-img-top img-fluid" alt="{{ build.title }}">
+              </div>
             {% endif %}
             <div class="card-body">
               <h5 class="card-title text-info">{{ build.title }}</h5>
