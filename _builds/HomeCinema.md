@@ -2,7 +2,7 @@
 layout: build
 title: "DIY Home Cinema"
 date: 2025-09-24
-image: "/assets/images/DIYHomeCinema/HomeCinem2.jpg"
+image: "/assets/images/DIYHomeCinema/HomeCinema2.jpg"
 description: "A handy organiser for your remote controls"
 category: "Inventions"
 ---
