@@ -24,7 +24,7 @@ I cut rails and drilld holes at either end to contain an aluminium bushing to ac
 
 ![Projector Screen axle]({{ "/assets/images/DIYHomeCinema/HomeCinema4.jpg" | relative_url }})
 
-I decided that it would be fun to motorize the screen. I used an old drill and bypassed the trigger and battery. I wired it to an old tv powersupply that would have enough juice to power this thing. the axle was a piece of old drum hardware that had a nice bend in it in order to eguage with a hole in the top rail.
+I decided that it would be fun to motorize the screen. I used an old drill and bypassed the trigger and battery. I wired it to an old tv power supply that would have enough juice to power this thing. the axle was a piece of old drum hardware that had a nice bend in it in order to engage with a hole in the top rail.
 
 ![Projector Screen motor]({{ "/assets/images/DIYHomeCinema/HomeCinema3.jpg" | relative_url }})
 
