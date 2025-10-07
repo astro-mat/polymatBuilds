@@ -18,11 +18,11 @@ layout: default
   <div class="row g-4 build-list">
     {% for build in site.builds %}
       <div class="col-12 col-md-6 col-lg-4 build-item" data-category="{{ build.category | downcase }}">
-        <div class="card h-100 bg-secondary text-light shadow-sm border-0">
-          <a href="{{ build.url | relative_url }}" class="text-decoration-none text-light">
+        <div class="card h-100 bg-secondary text-light shadow-sm border-0 overflow-hidden">
+          <a href="{{ build.url | relative_url }}" class="text-decoration-none text-light d-block">
             {% if build.image %}
               <div class="card-img-wrapper">
-                <img src="{{ build.image | relative_url }}" class="card-img-top img-fluid" alt="{{ build.title }}">
+                <img src="{{ build.image | relative_url }}" class="img-fluid w-100" alt="{{ build.title }}">
               </div>
             {% endif %}
             <div class="card-body">
