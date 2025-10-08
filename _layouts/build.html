@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="bg-dark container-fluid my-5 px-4">
+<section class="bg-dark container-fluid my-5 px-3 px-sm-4">
 
   <!-- Header -->
   <header class="mb-5">
@@ -25,15 +25,16 @@ layout: default
 
   <!-- Optional Gallery -->
   {% if page.gallery %}
-    <div class="row g-3 mb-5">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
       {% for img in page.gallery %}
-        <div class="col-12 col-sm-6 col-md-4">
-          <a href="{{ img | relative_url }}" data-lightbox="build-gallery">
+        <div class="col">
+          <a href="{{ img | relative_url }}" data-lightbox="build-gallery" class="d-block">
             <img src="{{ img | relative_url }}" class="img-fluid rounded shadow-sm gallery-img" alt="">
           </a>
         </div>
       {% endfor %}
     </div>
+
   {% endif %}
 
   <!-- Main Content -->
