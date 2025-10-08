@@ -41,19 +41,19 @@ layout: default
           <!-- Navigation -->
     <div class="d-flex justify-content-between align-items-center mt-5 pt-4 border-top border-secondary">
       {% if page.previous %}
-        <a href="{{ page.previous.url | relative_url }}" class="btn btn-outline-info rounded-pill">
+        <a href="{{ page.previous.url | relative_url }}" class="btn btn-outline-light rounded-pill">
           ← {{ page.previous.title }}
         </a>
       {% else %}
         <span></span>
       {% endif %}
 
-      <a href="{{ '/builds/' | relative_url }}" class="btn btn-outline-info rounded-pill">
+      <a href="{{ '/builds/' | relative_url }}" class="btn btn-outline-light rounded-pill">
         All Builds
       </a>
 
       {% if page.next %}
-        <a href="{{ page.next.url | relative_url }}" class="btn btn-outline-info rounded-pill">
+        <a href="{{ page.next.url | relative_url }}" class="btn btn-outline-light rounded-pill">
           {{ page.next.title }} →
         </a>
       {% else %}
