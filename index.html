@@ -56,9 +56,11 @@ title: Home
       {% unless build.title == "All Builds" %}
         <div class="col-md-4">
           <div class="card h-100 bg-secondary text-light shadow-sm border-0 overflow-hidden">
-            <a href="{{ build.url | relative_url }}" class="text-decoration-none text-light">
+            <a href="{{ build.url | relative_url }}" class="text-decoration-none text-light d-block">
               {% if build.image %}
-                <img src="{{ build.image | relative_url }}" class="img-fluid w-100" alt="{{ build.title }}">
+                <div class="card-img-wrapper">
+                  <img src="{{ build.image | relative_url }}" class="img-fluid w-100" alt="{{ build.title }}">
+                </div>
               {% endif %}
               <div class="card-body">
                 <h5 class="card-title text-info">{{ build.title }}</h5>
