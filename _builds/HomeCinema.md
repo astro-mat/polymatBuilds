@@ -3,7 +3,7 @@ layout: build
 title: "DIY Home Cinema"
 date: 2025-09-24
 image: "/assets/images/DIYHomeCinema/HomeCinema2.jpg"
-description: "A handy organiser for your remote controls"
+description: "A DIY approach to home cinema"
 category: "Inventions"
 ---
 My house has a large combined kitchen and living room with vaulted ceiling. had always wanted to install a projector and screen but could never decide where it would go. 
@@ -12,7 +12,7 @@ Some friends brought around a projector for an impromptu movie night and suggest
 
 What followed was a frantic week of obsession to get something setup. I perused Facebook marketplace and found a well priced projector 1hr from me so I jumped on it. I couldn't justify the extra expense of a proper screen and so I decided to make one. I decided that I would limit myself to only things I had lying around the house.
 
-I mounted the projector in a box I made and screwed it to the joists of the vaulted ceiling. I will varnish this later but for the moment it works. There was conveniently, already a powersocket below it. I may later on, spur off this to bring it to the same level as the box but it doesn't really bother me. I dug out an extra long HDMI cable to go around the room to the rest of the setup. This will again need to be tidied up later.
+I mounted the projector in a box I made and screwed it to the joists of the vaulted ceiling. I will varnish this later but for the moment it works. There was conveniently, already a power-socket below it. I may later on, spur off this to bring it to the same level as the box but it doesn't really bother me. I dug out an extra long HDMI cable to go around the room to the rest of the setup. This will again need to be tidied up later.
 
 ![Projector Box]({{ "/assets/images/DIYHomeCinema/HomeCinema1.jpg" | relative_url }})
 
@@ -20,7 +20,7 @@ Next up was the projector screen. Although I could buy a 150" screen for about â
 
 ![Projector Screen]({{ "/assets/images/DIYHomeCinema/HomeCinema2.jpg" | relative_url }})
 
-I cut rails and drilld holes at either end to contain an aluminium bushing to act as an axle on the top ones. I sandwiched the screen top and bottom between the rails 
+I cut rails and drilled holes at either end to contain an aluminium bushing to act as an axle on the top ones. I sandwiched the screen top and bottom between the rails 
 
 ![Projector Screen axle]({{ "/assets/images/DIYHomeCinema/HomeCinema4.jpg" | relative_url }})
 

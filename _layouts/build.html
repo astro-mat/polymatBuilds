@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <section class="container my-5">
   <div class="row justify-content-center">
     <div class="col-12 col-lg-10 col-xl-8">
@@ -15,9 +16,9 @@ layout: default
         </p>
       </header>
 
-      <!-- Hero Image -->
+      <!-- Featured Image -->
       {% if page.image %}
-      <figure class="mb-4">
+      <figure class="mb-4 text-center">
         <img src="{{ page.image | relative_url }}"
              alt="{{ page.title }}"
              class="img-fluid rounded shadow-sm w-100"
@@ -27,13 +28,13 @@ layout: default
       </figure>
       {% endif %}
 
-      <!-- Main Content -->
-      <div class="content mb-5">
+      <!-- Build Content -->
+      <article class="content mb-5">
         {{ content }}
-      </div>
+      </article>
 
-      <!-- Back to all builds -->
-      <div class="text-center">
+      <!-- Back Button -->
+      <div class="text-center mt-4">
         <a href="{{ '/builds/' | relative_url }}" class="btn btn-outline-light">← Back to All Builds</a>
       </div>
 
@@ -56,20 +57,29 @@ layout: default
 </div>
 
 <script>
+  // Make all content images responsive
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.content img').forEach(img => {
+      img.classList.add('img-fluid', 'rounded', 'my-3', 'shadow-sm');
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', e => openModal(e, img));
+    });
+
+    // Modal cleanup
+    const modalEl = document.getElementById('imgModal');
+    if (modalEl) {
+      modalEl.addEventListener('hidden.bs.modal', () => {
+        document.getElementById('modalImage').src = '';
+      });
+    }
+  });
+
   // Modal logic
   function openModal(e, el) {
     e.preventDefault();
-    const src = el.dataset.img || el.getAttribute('href');
+    const src = el.dataset.img || el.src;
     const modalImg = document.getElementById('modalImage');
     modalImg.src = src;
     new bootstrap.Modal(document.getElementById('imgModal')).show();
   }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const modalEl = document.getElementById('imgModal');
-    if (!modalEl) return;
-    modalEl.addEventListener('hidden.bs.modal', () => {
-      document.getElementById('modalImage').src = '';
-    });
-  });
 </script>
