@@ -35,7 +35,12 @@ img.img-fluid {
 
 .gallery-img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
+
 
 .gallery-img:hover {
   transform: scale(1.03);
