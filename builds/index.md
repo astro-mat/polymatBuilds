@@ -1,5 +1,5 @@
 ---
 layout: portfolio
 title: "All Builds"
-permalink: /builds/
+# permalink: /builds/
 ---
