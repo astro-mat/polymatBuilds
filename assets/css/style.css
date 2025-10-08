@@ -29,7 +29,8 @@ h1, h2, h3 {
 .letter-spacing-1 { letter-spacing: 0.1em; }
 
 img.img-fluid {
-  max-height: 70vh;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
