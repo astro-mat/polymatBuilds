@@ -4,90 +4,95 @@ layout: default
 
 <section class="bg-dark py-5">
 
-  <div class="container" style="max-width: 800px;">
+  <!-- Outer fluid container for full-width responsiveness -->
+  <div class="container-fluid px-3 px-sm-4">
+
+    <!-- Inner max-width wrapper for text/content -->
+    <div class="mx-auto" style="max-width: 800px;">
 
       <!-- Header -->
-  <header class="mb-5">
-    <h1 class="fw-bold display-5 text-info mb-2">{{ page.title }}</h1>
-    {% if page.category %}
-      <p class="text-uppercase small letter-spacing-1">{{ page.category }}</p>
-    {% endif %}
-    <hr class="border-secondary opacity-50">
-  </header>
+      <header class="mb-5">
+        <h1 class="fw-bold display-5 text-info mb-2">{{ page.title }}</h1>
+        {% if page.category %}
+          <p class="text-uppercase small letter-spacing-1">{{ page.category }}</p>
+        {% endif %}
+        <hr class="border-secondary opacity-50">
+      </header>
 
-  <!-- Featured Image -->
-  <!-- {% if page.image %}
-    <div class="mb-4">
-      <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-lg w-100" alt="{{ page.title }}">
-      {% if page.image_caption %}
-        <p class="text-muted mt-2 small fst-italic">{{ page.image_caption }}</p>
-      {% endif %}
-    </div>
-  {% endif %} -->
-
-  <!-- Optional Gallery -->
-  {% if page.gallery %}
-    <div class="row row-cols-1 row-cols-sm-2 g-3">
-      {% for img in page.gallery %}
-        <div class="col">
-          <a href="{{ img | relative_url }}" data-lightbox="build-gallery" class="d-block">
-            <img src="{{ img | relative_url }}" class="img-fluid rounded shadow-sm gallery-img" alt="">
-          </a>
+      <!-- Featured Image (optional) -->
+      {% if page.image %}
+        <div class="mb-4">
+          <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-lg w-100" alt="{{ page.title }}">
+          {% if page.image_caption %}
+            <p class="text-muted mt-2 small fst-italic">{{ page.image_caption }}</p>
+          {% endif %}
         </div>
-      {% endfor %}
+      {% endif %}
+
     </div>
 
-  {% endif %}
-
-  <!-- Main Content -->
-  <article class="text-light lead" style="max-width: 800px;">
-    {{ content }}
-  </article>
-
-  <!-- Navigation -->
-  <div class="d-flex justify-content-between align-items-center mt-5 pt-4 border-top border-secondary">
-    {% if page.previous %}
-      <a href="{{ page.previous.url | relative_url }}" class="btn btn-outline-info rounded-pill">
-        ← {{ page.previous.title }}
-      </a>
-    {% else %}
-      <span></span>
+    <!-- Optional Gallery (full width, responsive) -->
+    {% if page.gallery %}
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+        {% for img in page.gallery %}
+          <div class="col">
+            <a href="{{ img | relative_url }}" data-lightbox="build-gallery" class="d-block">
+              <img src="{{ img | relative_url }}" class="img-fluid rounded shadow-sm gallery-img" alt="">
+            </a>
+          </div>
+        {% endfor %}
+      </div>
     {% endif %}
 
-    <a href="{{ '/builds/' | relative_url }}" class="btn btn-outline-info rounded-pill">
-      All Builds
-    </a>
+    <!-- Main Content -->
+    <div class="mx-auto" style="max-width: 800px;">
+      <article class="text-light lead">
+        {{ content }}
+      </article>
 
-    {% if page.next %}
-      <a href="{{ page.next.url | relative_url }}" class="btn btn-outline-info rounded-pill">
-        {{ page.next.title }} →
-      </a>
-    {% else %}
-      <span></span>
-    {% endif %}
-  </div>
+      <!-- Navigation -->
+      <div class="d-flex justify-content-between align-items-center mt-5 pt-4 border-top border-secondary">
+        {% if page.previous %}
+          <a href="{{ page.previous.url | relative_url }}" class="btn btn-outline-info rounded-pill">
+            ← {{ page.previous.title }}
+          </a>
+        {% else %}
+          <span></span>
+        {% endif %}
+
+        <a href="{{ '/builds/' | relative_url }}" class="btn btn-outline-info rounded-pill">
+          All Builds
+        </a>
+
+        {% if page.next %}
+          <a href="{{ page.next.url | relative_url }}" class="btn btn-outline-info rounded-pill">
+            {{ page.next.title }} →
+          </a>
+        {% else %}
+          <span></span>
+        {% endif %}
+      </div>
+    </div>
+
   </div>
 </section>
 
-
-
-<!-- Optional Lightbox JS (simple built-in) -->
+<!-- Optional Lightbox JS -->
 <script>
-  // Basic lightbox-like zoom without a library
-  document.querySelectorAll('[data-lightbox]').forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      const overlay = document.createElement('div');
-      overlay.style.cssText = `
-        position:fixed; inset:0; background:rgba(0,0,0,0.9);
-        display:flex; align-items:center; justify-content:center; z-index:9999;
-      `;
-      const img = document.createElement('img');
-      img.src = link.href;
-      img.style.cssText = 'max-width:90%; max-height:90%; border-radius:10px;';
-      overlay.appendChild(img);
-      overlay.addEventListener('click', () => overlay.remove());
-      document.body.appendChild(overlay);
-    });
+document.querySelectorAll('[data-lightbox]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const overlay = document.createElement('div');
+    overlay.style.cssText = `
+      position:fixed; inset:0; background:rgba(0,0,0,0.9);
+      display:flex; align-items:center; justify-content:center; z-index:9999;
+    `;
+    const img = document.createElement('img');
+    img.src = link.href;
+    img.style.cssText = 'max-width:90%; max-height:90%; border-radius:10px;';
+    overlay.appendChild(img);
+    overlay.addEventListener('click', () => overlay.remove());
+    document.body.appendChild(overlay);
   });
+});
 </script>
