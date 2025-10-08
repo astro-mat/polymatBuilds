@@ -54,7 +54,7 @@ title: Home
     {% assign recent = site.builds | sort: 'date' | reverse | slice: 0,3 %}
     {% for build in recent %}
       {% unless build.title == "All Builds" %}
-        <div class="col-md-4">
+        <!-- <div class="col-md-4">
           <div class="card h-100 shadow-sm border-0 bg-dark text-light">
             <a href="{{ build.url | relative_url }}" class="text-decoration-none text-light">
               {% if build.image %}
@@ -66,7 +66,22 @@ title: Home
               </div>
             </a>
           </div>
+        </div> -->
+        <div class="col-12 col-sm-6 col-lg-4 build-item" data-category="{{ build.category | downcase }}">
+        <div class="card h-100 bg-secondary text-light shadow-sm border-0 overflow-hidden">
+          <a href="{{ build.url | relative_url }}" class="text-decoration-none text-light d-block">
+            {% if build.image %}
+              <div class="card-img-wrapper">
+                <img src="{{ build.image | relative_url }}" class="img-fluid w-100" alt="{{ build.title }}">
+              </div>
+            {% endif %}
+            <div class="card-body">
+              <h5 class="card-title text-info">{{ build.title }}</h5>
+              <p class="card-text">{{ build.description }}</p>
+            </div>
+          </a>
         </div>
+      </div>
       {% endunless %}
     {% endfor %}
   </div>
