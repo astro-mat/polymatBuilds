@@ -32,7 +32,7 @@ layout: default
     </div>
 
     <!-- Optional Gallery (full width, responsive) -->
-    {% if page.gallery %}
+    <!-- {% if page.gallery %}
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
         {% for img in page.gallery %}
           <div class="col">
@@ -41,6 +41,20 @@ layout: default
             </a>
           </div>
         {% endfor %}
+      </div>
+    {% endif %} -->
+
+    {% if page.gallery %}
+      <div class="mx-auto" style="max-width: 800px;">
+        <div class="row row-cols-1 row-cols-sm-2 g-3 mb-5">
+          {% for img in page.gallery %}
+            <div class="col">
+              <a href="{{ img | relative_url }}" data-lightbox="build-gallery" class="d-block">
+                <img src="{{ img | relative_url }}" class="gallery-img rounded shadow-sm" alt="">
+              </a>
+            </div>
+          {% endfor %}
+        </div>
       </div>
     {% endif %}
 

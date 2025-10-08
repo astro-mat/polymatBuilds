@@ -36,9 +36,10 @@ img.img-fluid {
 
 .gallery-img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  width: 100%;      /* fill column width */
+  height: auto;     /* scale height */
+  max-width: 100%;  /* never exceed container */
+  object-fit: contain; /* show full image without cropping */
   display: block;
 }
 

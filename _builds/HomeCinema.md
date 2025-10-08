@@ -16,7 +16,7 @@ I mounted the projector in a box I made and screwed it to the joists of the vaul
 
 ![Projector Box]({{ "/assets/images/DIYHomeCinema/HomeCinema1.jpg" | relative_url }})
 
-Next up was the projector screen. Although I could by a 150" screen for about €150, I didn't really want to and I would have to wait a while for delivery. I decided to make one. I ordered a cheap stretch fabric screen from amazon. I was disappointed with the thinness of the fabric but there ya go. 
+Next up was the projector screen. Although I could buy a 150" screen for about €150, I didn't really want to and I would have to wait a while for delivery. I decided to make one. I ordered a cheap stretch fabric screen from amazon. I was disappointed with the thinness of the fabric. 
 
 ![Projector Screen]({{ "/assets/images/DIYHomeCinema/HomeCinema2.jpg" | relative_url }})
 
