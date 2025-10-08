@@ -1,0 +1,89 @@
+---
+layout: default
+---
+<section class="bg-dark py-5">
+
+  <div class="container" style="max-width: 800px;">
+
+    <!-- Header -->
+    <header class="mb-5">
+      <h1 class="fw-bold display-5 text-info mb-2">{{ page.title }}</h1>
+      {% if page.category %}
+        <p class="text-uppercase small letter-spacing-1">{{ page.category }}</p>
+      {% endif %}
+      <hr class="border-secondary opacity-50">
+    </header>
+
+    <!-- Featured Image -->
+    {% if page.image %}
+      <div class="mb-4">
+        <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-lg w-100" alt="{{ page.title }}">
+        {% if page.image_caption %}
+          <p class="text-muted mt-2 small fst-italic">{{ page.image_caption }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <!-- Optional Gallery -->
+    {% if page.gallery %}
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+        {% for img in page.gallery %}
+          <div class="col">
+            <a href="{{ img | relative_url }}" data-lightbox="build-gallery" class="d-block">
+              <img src="{{ img | relative_url }}" class="img-fluid rounded shadow-sm" alt="">
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <!-- Main Content -->
+    <article class="text-light lead">
+      {{ content }}
+    </article>
+
+    <!-- Navigation -->
+    <div class="d-flex justify-content-between align-items-center mt-5 pt-4 border-top border-secondary">
+      {% if page.previous %}
+        <a href="{{ page.previous.url | relative_url }}" class="btn btn-outline-info rounded-pill">
+          ← {{ page.previous.title }}
+        </a>
+      {% else %}
+        <span></span>
+      {% endif %}
+
+      <a href="{{ '/builds/' | relative_url }}" class="btn btn-outline-info rounded-pill">
+        All Builds
+      </a>
+
+      {% if page.next %}
+        <a href="{{ page.next.url | relative_url }}" class="btn btn-outline-info rounded-pill">
+          {{ page.next.title }} →
+        </a>
+      {% else %}
+        <span></span>
+      {% endif %}
+    </div>
+
+  </div>
+</section>
+
+<!-- Optional Lightbox JS -->
+<script>
+  document.querySelectorAll('[data-lightbox]').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const overlay = document.createElement('div');
+      overlay.style.cssText = `
+        position:fixed; inset:0; background:rgba(0,0,0,0.9);
+        display:flex; align-items:center; justify-content:center; z-index:9999;
+      `;
+      const img = document.createElement('img');
+      img.src = link.href;
+      img.style.cssText = 'max-width:90%; max-height:90%; border-radius:10px;';
+      overlay.appendChild(img);
+      overlay.addEventListener('click', () => overlay.remove());
+      document.body.appendChild(overlay);
+    });
+  });
+</script>
