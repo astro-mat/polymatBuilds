@@ -17,7 +17,7 @@ layout: default
   <!-- Build cards -->
   <div class="row g-4 build-list">
     {% for build in site.builds %}
-      <div class="col-12 col-sm-6 col-lg-4 build-item" data-category="{{ build.category | downcase }}">
+      <div class="col-12 col-sm-6 col-lg-4 build-item" data-category="{{ build.category | join: ' ' | downcase }}">
         <div class="card h-100 bg-secondary text-light shadow-sm border-0 overflow-hidden">
           <a href="{{ build.url | relative_url }}" class="text-decoration-none text-light d-block">
             {% if build.image %}
@@ -46,7 +46,7 @@ layout: default
       btn.classList.add('active');
       const filter = btn.dataset.filter;
       items.forEach(item => {
-        item.style.display = filter === 'all' || item.dataset.category === filter ? '' : 'none';
+        item.style.display = filter === 'all' || item.dataset.category.includes(filter) ? '' : 'none';
       });
     });
   });
