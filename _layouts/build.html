@@ -1,0 +1,75 @@
+---
+layout: default
+---
+<section class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-10 col-xl-8">
+
+      <!-- Title & Meta -->
+      <header class="mb-4 text-center">
+        <h1 class="display-5 fw-bold">{{ page.title }}</h1>
+        <p class="text-secondary mb-1">{{ page.description }}</p>
+        <p class="text-muted small mb-0">
+          <span class="me-2"><strong>Category:</strong> {{ page.category }}</span> •
+          <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %e, %Y" }}</time>
+        </p>
+      </header>
+
+      <!-- Hero Image -->
+      {% if page.image %}
+      <figure class="mb-4">
+        <img src="{{ page.image | relative_url }}"
+             alt="{{ page.title }}"
+             class="img-fluid rounded shadow-sm w-100"
+             role="button"
+             onclick="openModal(event,this)"
+             data-img="{{ page.image | relative_url }}">
+      </figure>
+      {% endif %}
+
+      <!-- Main Content -->
+      <div class="content mb-5">
+        {{ content }}
+      </div>
+
+      <!-- Back to all builds -->
+      <div class="text-center">
+        <a href="{{ '/builds/' | relative_url }}" class="btn btn-outline-light">← Back to All Builds</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Image Modal -->
+<div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light border-0">
+      <div class="modal-body p-0">
+        <img id="modalImage" src="" class="img-fluid w-100 rounded-bottom" alt="">
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Modal logic
+  function openModal(e, el) {
+    e.preventDefault();
+    const src = el.dataset.img || el.getAttribute('href');
+    const modalImg = document.getElementById('modalImage');
+    modalImg.src = src;
+    new bootstrap.Modal(document.getElementById('imgModal')).show();
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const modalEl = document.getElementById('imgModal');
+    if (!modalEl) return;
+    modalEl.addEventListener('hidden.bs.modal', () => {
+      document.getElementById('modalImage').src = '';
+    });
+  });
+</script>
