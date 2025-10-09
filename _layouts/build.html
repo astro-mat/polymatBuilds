@@ -66,8 +66,8 @@ layout: default
 </section>
 
 <!-- Image Modal -->
-<!-- <div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
     <div class="modal-content bg-dark text-light border-0">
       <div class="modal-body p-0">
         <img id="modalImage" src="" class="img-fluid w-100 rounded-bottom" alt="">
@@ -77,33 +77,8 @@ layout: default
       </div>
     </div>
   </div>
-</div> -->
-
-<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- XL makes it bigger -->
-    <div class="modal-content bg-transparent border-0">
-      <div class="modal-body text-center p-0">
-        <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-lg" alt="{{ page.title }}">
-      </div>
-    </div>
-  </div>
 </div>
 
-<style>
-  /* Make the modal image fit the viewport better */
-  .modal-body img {
-    width: 100%;
-    height: auto;
-    max-height: 90vh; /* Never exceeds viewport height */
-    object-fit: contain;
-  }
-
-  /* Optional: dark backdrop effect */
-  .modal-backdrop.show {
-    opacity: 0.9;
-    background-color: rgba(0, 0, 0, 0.95);
-  }
-</style>
 
 <script>
   // Make all content images responsive
