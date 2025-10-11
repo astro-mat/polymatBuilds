@@ -1,6 +1,6 @@
 ---
 layout: build
-title: "Mosrite Copy Guitar"
+title: "Matrite - Mosrite Copy Guitar"
 date: 2024-03-15
 image: "/assets/images/MosriteCopyGuitar/MosriteCopyGuitar_1.jpg"
 description: "A home made copy of a Mosrite Ventures guitar"
