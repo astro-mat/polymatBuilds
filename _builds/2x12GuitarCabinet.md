@@ -3,7 +3,7 @@ layout: build
 title: "2x12 Guitar Cabinet"
 date: 2019-05-15
 image: "/assets/images/2x12GuitarCab/2x12GuitarCab_1.jpg"
-description: "Custom made 2 x 12" Guitar cabinet"
+description: "Custom made 2x12 Guitar cabinet"
 category: ["Music Equipment", "Carpentry"]
 ---
 A simple 2x12 guitar cabinet. Using the dimensions from a Zilla Fat Boy cabinet. Open back but included a panel that can be attached to make it a closed back. Not sure where that is now!
