@@ -1,10 +1,10 @@
 ---
 layout: build
-title: "Studio Build Part 1: The beginning"
+title: "Studio Build Part 1: The Beginning"
 date: 2017-05-15
 image: "assets/images/StudioBuild/TheBeginning/cowshed_2.JPG" 
 description: "The beginnings of the design and construction of a home recording studio"
-category: ["Recording Studio Build", "Carpentry"]
+category: "Recording Studio Build"
 ---
 In 2017, I began work on my largest and most ambitious project to date. The design and construction of a home recording studio. I had been a bit obsessed with recording studios and the technology and techniques behind the recording of my favourite records. I longed for a place to learn and experiment with recording that would be a step up from the bedrooms and makeshift spaces I had used up until that point. With the purchase of my house in 2017 I finally had my chance. 
 
