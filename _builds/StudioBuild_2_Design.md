@@ -4,7 +4,7 @@ title: "Studio Build Part 2: Studio Design"
 date: 2017-06-15
 image: "assets/images/StudioBuild/StudioDesign/SECTION1.jpg" 
 description: "The design of my home studio"
-category: ["Recording Studio Build", "Carpentry"]
+category: "Recording Studio Build"
 ---
 The design process was a long one. I had to learn about acoustics and studio design first which was great fun. I devoured every book I could get hold of and poured over online forums. 
 
@@ -14,7 +14,7 @@ There were many questions which took a while to figure out. The space was a very
 
 ![The space available for a recording studio]({{ "assets/images/StudioBuild/StudioDesign/measurements.jpg" | relative_url }})
 
-There where some decisions that were arrived at early on. The design was drawn up in sketchup which in itself, took a long time and resulted in a very complex model. I had decided to go with a one room design. All of my recording experience in the past had been done in make-shift spaces and as such, there were never any control rooms or recording booths. I realised that I liked this setup. Being able to lean over and talk to the talent is much better than being in another room and pushing a button. It would also keep costs down which was a very important consideration.
+There where some decisions that were arrived at early on. The design was drawn up in sketch-up which in itself, took a long time and resulted in a very complex model. I had decided to go with a one room design. All of my recording experience in the past had been done in make-shift spaces and as such, there were never any control rooms or recording booths. I realised that I liked this setup. Being able to lean over and talk to the talent is much better than being in another room and pushing a button to communicate. It would also keep costs down which was a very important consideration.
 
 ![The space available for a recording studio]({{ "assets/images/StudioBuild/StudioDesign/SECTION3.jpg" | relative_url }})
 
