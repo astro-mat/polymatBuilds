@@ -1,7 +1,7 @@
 ---
 layout: build
 title: "Studio Build: Alternating-Tread Staircase "
-date: 2017-05-15
+date: 2020-05-15
 image: "assets/images/StudioBuild/AlternatingTreadStaircase/final.jpg" 
 description: "An alternating-tread staircase with integrated bookshelf and storage for home recording studio"
 category: ["Recording Studio Build", "Carpentry"]
