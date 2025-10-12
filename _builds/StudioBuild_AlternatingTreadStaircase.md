@@ -27,7 +27,7 @@ The were also inconsistencies with the thickness of the ply used which caused a 
 ![Alternating-tread staircase]({{ "assets/images/StudioBuild/AlternatingTreadStaircase/Staircase_6.jpg" | relative_url }})
 ![Alternating-tread staircase]({{ "assets/images/StudioBuild/AlternatingTreadStaircase/Staircase_7.jpg" | relative_url }})
 
-Looking down from the top along the line of the treads. It can be seen that everything is completely inline. In years to com, after I am gone, I can image people wondering how such precision was achieved with such primitive tools. Much like the way we marvel at the construction of the pyramids today!!!
+Looking down from the top along the line of the treads. It can be seen that everything is completely inline. In years to come, after I am gone, I can image people wondering how such precision was achieved with such primitive tools. Much like the way we marvel at the construction of the pyramids today!!!
 
 ![Alternating-tread staircase]({{ "assets/images/StudioBuild/AlternatingTreadStaircase/Staircase_8.jpg" | relative_url }})
 
