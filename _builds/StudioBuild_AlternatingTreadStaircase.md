@@ -33,7 +33,7 @@ Looking down from the top along the line of the treads. It can be seen that ever
 
 I was very happy with how the staircase turned out. It is a real centrepiece of the studio. I still need to add some non slip surface to the treads and a handrail
 
-![Alternating-tread staircase]({{ ""assets/images/StudioBuild/AlternatingTreadStaircase/final.jpg" " | relative_url }})
+![Alternating-tread staircase]({{ "assets/images/StudioBuild/AlternatingTreadStaircase/final.jpg" " | relative_url }})
 
 
 
