@@ -22,9 +22,11 @@ There where some decisions that were arrived at early on. The design was drawn u
 
 All work would be carried out by myself. Again, to keep costs down but also because it is fun!
 
-The main Control room would be on the top level which will be extended out into a mezzanine area. Below this area would be the vocal booth. This will sound treated to be quite dead in terms of reverberation. The main area will be the live recording area. The sound will be quite open here with a hard floor and diffussed sound coming from the stone walls with deep crevices. The roof will extend to height here of about 3m with sound absorption behind slats arranged in a pattern to provide further diffusion. This should all combine to create a great environment for drum recording which was one of the main aims.
+The main Control room would be on the top level which will be extended out into a mezzanine area. Below this area would be the vocal booth. This will sound treated to be quite dead in terms of reverberation. The main area will be the live recording area. The sound will be quite open here with a hard floor and diffused sound coming from the stone walls with deep crevices. The roof will extend to height here of about 3m with sound absorption behind slats arranged in a pattern to provide further diffusion. This should all combine to create a great environment for drum recording which was one of the main aims.
 
 ![The space available for a recording studio]({{ "assets/images/StudioBuild/StudioDesign/SECTION1.jpg" | relative_url }})
+
+The room underneath the control area will become a workshop. I think it will also be used as a machine romm. I can house the studio computer in this room and then I dont need to build the computer in a way that it is quiet which would cost more money.
 
 ![The space available for a recording studio]({{ "assets/images/StudioBuild/StudioDesign/TOP-VIEW.jpg" | relative_url }})
 
