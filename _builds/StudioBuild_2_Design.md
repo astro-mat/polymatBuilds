@@ -50,6 +50,6 @@ As mentioned in the previous post, Sound isolation was not really included due t
 
 Although the design was a long process, It had to be done properly and by the end, I was very eager to get building!!!
 
-UPDATE:
+<em><strong>UPDATE:</strong></em>
 [Final studio can be viewed at:](file:///C:/GitHub/studiomoomoo/index.html)
 

@@ -28,7 +28,7 @@ The space was being used as a workshop and was also full of junk left by the pre
 
 It was clear that a lot of design had to undertaking before anything else. I setup in the space a makeshift office and begun what would prove to be a lengthy design process
 
-UPDATE:
+<em><strong>UPDATE:</strong></em>
 [Final studio can be viewed at:](file:///C:/GitHub/studiomoomoo/index.html)
 
 
