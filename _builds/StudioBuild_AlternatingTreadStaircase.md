@@ -18,7 +18,7 @@ The staircase was a real test of precision cutting. Everything had to fit togeth
 
 ![Alternating-tread staircase]({{ "assets/images/StudioBuild/AlternatingTreadStaircase/Staircase_1.jpg" | relative_url }})
 
-The were also inconsistencies with the thickness of the ply used which caused a few issues
+There were also inconsistencies with the thickness of the ply used which caused a few issues.
 
 ![Alternating-tread staircase]({{ "assets/images/StudioBuild/AlternatingTreadStaircase/Staircase_2.jpg" | relative_url }})
 ![Alternating-tread staircase]({{ "assets/images/StudioBuild/AlternatingTreadStaircase/Staircase_3.jpg" | relative_url }})
@@ -36,6 +36,6 @@ I was very happy with how the staircase turned out. It is a real centrepiece of 
 ![Alternating-tread staircase]({{ "assets/images/StudioBuild/AlternatingTreadStaircase/final.jpg" " | relative_url }})
 
 <em><strong>UPDATE:</strong></em>
-[Final studio can be viewed at:](file:///C:/GitHub/studiomoomoo/index.html)
+[Final studio result can be viewed at:](https://www.studiomoomoo.ie/)
 
 
