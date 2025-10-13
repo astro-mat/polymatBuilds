@@ -36,6 +36,6 @@ I was very happy with how the staircase turned out. It is a real centrepiece of 
 ![Alternating-tread staircase]({{ "assets/images/StudioBuild/AlternatingTreadStaircase/final.jpg" " | relative_url }})
 
 <em><strong>UPDATE:</strong></em>
-[Final studio result can be viewed at:](https://www.studiomoomoo.ie/)
+[Final studio result can be viewed here](https://www.studiomoomoo.ie/)
 
 
