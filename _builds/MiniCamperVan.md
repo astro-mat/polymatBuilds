@@ -19,7 +19,7 @@ The main unit is cone that comprises of Desk, extending, wash basin, battery and
 
 ![Mini Camper van - Cooking Unit]({{ "assets/images/MiniCamperVan/Camper_3.jpg" | relative_url }})
 
-![Mini Camper van]({{ "assets/images/StudioBuild/MiniCamperVan/Camper_6.jpg" | relative_url }})
+![Mini Camper van]({{ "assets/images/MiniCamperVan/Camper_6.jpg" | relative_url }})
 
 Next to this is a floor to ceiling unit. This is again attached using butterfly catches. This unit houses a removable bed section, a cooler bog on a retracting shelf. A water bottle and storage areas
 
