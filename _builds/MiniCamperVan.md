@@ -11,6 +11,8 @@ In 2025, after spending some time turning up to Carpentry jobs with a Nissan Not
 
 I found a bog standard, all white 2012 Peugeut partner. I had had the idea to turn a van like this into a small camper van but thought that it may be too small. With some investigation, I found that by lowering the centre section of the front seat, I could pop my legs through there quite comfortably.
 
+![Mini Camper van]({{ "assets/images/MiniCamperVan/Camper_12.jpg" | relative_url }})
+
 Key requirements of the design was that it should be as cheap as possible and that all elements could be removed if I needed the room for transporting larger items. This was achieved with butterfly catches that engaged with a latch attached to blocks attached to the walls of the van
 
 The main unit is cone that comprises of Desk, extending, wash basin, battery and storage. The battery is simply a ["Bluetti AC50B"](https://www.bluettipower.com/products/ac50b). This is mounted on a sliding shelf to ease removal and situated beside a handy cigarette port to allow charging. The wash basin is simply a tub that I routed into the top of the unit. It is not plumbed into anything as water can just be pored out.
@@ -43,9 +45,7 @@ To convert the van into sleeping mode, the main bed unit extends out, the extens
 
 ![Mini Camper van]({{ "assets/images/MiniCamperVan/Camper_20.jpg" | relative_url }})
 
-![Mini Camper van]({{ "assets/images/MiniCamperVan/Camper_12.jpg" | relative_url }})
-
-There is plenty of room in the front for sox, his bed and food and water.
+There is plenty of room in the front for Sox, his bed and food and water.
 
 ![Mini Camper van]({{ "assets/images/MiniCamperVan/Camper_16.jpg" | relative_url }})
 
