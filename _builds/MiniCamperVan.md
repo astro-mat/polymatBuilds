@@ -1,9 +1,9 @@
 ---
 layout: build
-title: "Mini Peugeut Partner Stealth Camper Conversion"
+title: "Mini Peugeut Partner Stealth `Reversable` Camper Conversion"
 date: 2025-02-15
 image: "assets/images/MiniCamperVan/Camper_12.jpg" 
-description: "A mini camper van conversion with fully removable units"
+description: "A mini camper van conversion with fully removable units to revert back to a normal van!"
 category: ["Inventions", "Carpentry"]
 ---
 
@@ -52,5 +52,7 @@ There is plenty of room in the front for Sox, his bed and food and water.
 When parked up for the night, all bags can be piled up on the driver seat and accessed from the front.
 
 I am very happy with The conversion. It works really well for one night overnight stays. It has worked very well as a home office and for little mini holidays. It is as easy to drive as any normal car and so is much more suited for day to day activities than a large camper would. I would highly recommend. 
+
+Future improvements will be getting proper, nice seats rather than the ones repurposed from an old camper van. Would also Like to add solar panels.
 
 
