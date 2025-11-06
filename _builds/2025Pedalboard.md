@@ -2,7 +2,7 @@
 layout: build
 title: "2025 Guitar Pedalboard"
 date: 2025-11-04
-image: "/assets/images/2025Pedalboard/pedalboard_1.jpg"
+image: "/assets/images/2025Pedalboard/pedalboard_3.jpg"
 description: "All purpose Guitar pedalboard for 2025"
 category: ["Music Equipment", "Carpentry"]
 ---
@@ -23,5 +23,7 @@ The interface between board and amps, guitar etc was done with a 3D printed box 
 ![Pedalboard_4]({{ "/assets/images/2025Pedalboard/pedalboard_4.jpg" | relative_url }})
 
 The pedals are undecided at the moment. I wired everything up so that it can be changed easily. The board was designed to be changed easily as I have realised that I will always do that.
+
+The board is wired so that it can be used in a wet/dry configuration or just into one amp. The is a Boss LS-2 that can be used to select an external loop. The main use for this will be to patch in my modular  as an external effects rack.
 
 
