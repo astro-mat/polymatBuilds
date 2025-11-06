@@ -1,7 +1,7 @@
 ---
 layout: build
 title: "Lapsteel Guitar with Certano String Benders"
-date: 2020-11-01
+date: 2025-11-01
 image: "assets/images/lapsteelGuitar/lapsteel_4.jpg" 
 description: "A Solidbody, Lap-steel guitar with Certano String benders"
 category: [Instruments, "Carpentry"]
