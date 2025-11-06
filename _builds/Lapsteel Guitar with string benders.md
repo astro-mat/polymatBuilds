@@ -1,6 +1,6 @@
 ---
 layout: build
-title: "Lap-steel Guitar with Certano String Benders"
+title: "Lapsteel Guitar with Certano String Benders"
 date: 2020-11-01
 image: "assets/images/lapsteelGuitar/lapsteel_4.jpg" 
 description: "A Solidbody, Lap-steel guitar with Certano String benders"
@@ -49,7 +49,7 @@ The finished Item
 ![Lapsteel Guitar 1]({{ "assets/images/lapsteelGuitar/lapsteel_3.jpg" | relative_url }})
 ![Lapsteel Guitar 1]({{ "assets/images/lapsteelGuitar/lapsteel_4.jpg" | relative_url }})
 
-There were lots of mistakes but overall, quite happy with the build.
+There were lots of mistakes but overall, quite happy with the build. Now have to learn how to play it!
 
 
 
