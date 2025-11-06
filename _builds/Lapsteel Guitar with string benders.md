@@ -2,7 +2,7 @@
 layout: build
 title: "Lap-steel Guitar with Certano String Benders"
 date: 2020-11-01
-image: "assets/images/lapsteelGuitar/lapsteel_1.JPG" 
+image: "assets/images/lapsteelGuitar/lapsteel_4.jpg" 
 description: "A Solidbody, Lap-steel guitar with Certano String benders"
 category: [Instruments, "Carpentry"]
 ---
@@ -36,18 +36,18 @@ The fretboard was made from off-cuts off walnut I have had for years. The fret s
 
 ![Lapsteel Guitar build 11]({{ "assets/images/lapsteelGuitar/lapsteelBuild_11.JPG" | relative_url }})
 ![Lapsteel Guitar build 12]({{ "assets/images/lapsteelGuitar/lapsteelBuild_12.JPG" | relative_url }})
-![Lapsteel Guitar build 13]({{ "assets/images/lapsteelGuitar/lapsteelBuild_13.13PG" | relative_url }})
-![Lapsteel Guitar build 14]({{ "assets/images/lapsteelGuitar/lapsteelBuild_14.J14G" | relative_url }})
-![Lapsteel Guitar build 15]({{ "assets/images/lapsteelGuitar/lapsteelBuild_15.JP15" | relative_url }})
-![Lapsteel Guitar build 16]({{ "assets/images/lapsteelGuitar/lapsteelBuild_16.JP15" | relative_url }})
-![Lapsteel Guitar build 17]({{ "assets/images/lapsteelGuitar/lapsteelBuild_17.JP15" | relative_url }})
+![Lapsteel Guitar build 13]({{ "assets/images/lapsteelGuitar/lapsteelBuild_13.JPG" | relative_url }})
+![Lapsteel Guitar build 14]({{ "assets/images/lapsteelGuitar/lapsteelBuild_14.JPG" | relative_url }})
+![Lapsteel Guitar build 15]({{ "assets/images/lapsteelGuitar/lapsteelBuild_15.JPG" | relative_url }})
+![Lapsteel Guitar build 16]({{ "assets/images/lapsteelGuitar/lapsteelBuild_16.JPG" | relative_url }})
+![Lapsteel Guitar build 17]({{ "assets/images/lapsteelGuitar/lapsteelBuild_17.JPG" | relative_url }})
 
 The finished Item
 
-![Lapsteel Guitar 1]({{ "assets/images/lapsteelGuitar/lapsteel_1.JP15" | relative_url }})
-![Lapsteel Guitar 1]({{ "assets/images/lapsteelGuitar/lapsteel_2.JP15" | relative_url }})
-![Lapsteel Guitar 1]({{ "assets/images/lapsteelGuitar/lapsteel_3.JP15" | relative_url }})
-![Lapsteel Guitar 1]({{ "assets/images/lapsteelGuitar/lapsteel_4.JP15" | relative_url }})
+![Lapsteel Guitar 1]({{ "assets/images/lapsteelGuitar/lapsteel_1.jpg" | relative_url }})
+![Lapsteel Guitar 1]({{ "assets/images/lapsteelGuitar/lapsteel_2.jpg" | relative_url }})
+![Lapsteel Guitar 1]({{ "assets/images/lapsteelGuitar/lapsteel_3.jpg" | relative_url }})
+![Lapsteel Guitar 1]({{ "assets/images/lapsteelGuitar/lapsteel_4.jpg" | relative_url }})
 
 There were lots of mistakes but overall, quite happy with the build.
 
