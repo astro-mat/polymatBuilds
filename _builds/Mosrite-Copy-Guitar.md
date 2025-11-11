@@ -17,3 +17,8 @@ The body was a two piece of Irish ash from a local supplier. The neck came from 
 I was very happy with the resulting guitar. It is a bit heavy but I love the sound and feel. I have since learned that you never quite know how a guitar is going to end up until it is made and this was very good. I have the guitar these days strung with 11 gauge strings and tuned down to C for my solo, experimental guitar project.
 
 ![Mosrite copy guitar 3]({{ "/assets/images/MosriteCopyGuitar/MosriteCopyGuitar_3.jpg" | relative_url }})
+
+I don't have any pictures really of the build process. Here is a couple of what it looked like before I had decided how to finish it.
+
+![Mosrite copy guitar Unfinished 1]({{ "/assets/images/MosriteCopyGuitar/MosriteCopyUnfinished_1" | relative_url }})
+![Mosrite copy guitar Unfinished 2]({{ "/assets/images/MosriteCopyGuitar/MosriteCopyUnfinished_2" | relative_url }})
