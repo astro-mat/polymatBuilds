@@ -20,5 +20,5 @@ I was very happy with the resulting guitar. It is a bit heavy but I love the sou
 
 I don't have any pictures really of the build process. Here is a couple of what it looked like before I had decided how to finish it.
 
-![Mosrite copy guitar Unfinished 1]({{ "/assets/images/MosriteCopyGuitar/MosriteCopyUnfinished_1" | relative_url }})
-![Mosrite copy guitar Unfinished 2]({{ "/assets/images/MosriteCopyGuitar/MosriteCopyUnfinished_2" | relative_url }})
+![Mosrite copy guitar Unfinished 1]({{ "assets/images/MosriteCopyGuitar/MosriteCopyUnfinished_1.jpg" | relative_url }})
+![Mosrite copy guitar Unfinished 2]({{ "assets/images/MosriteCopyGuitar/MosriteCopyUnfinished_2.jpg" | relative_url }})
