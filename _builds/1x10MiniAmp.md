@@ -16,7 +16,4 @@ I originally started designing the cabinet to house the head upside-down in a si
 ![1x10 Mini Amp_2]({{ "assets/images/1x10miniamp/1x10miniamp_2.jpg" | relative_url }})
 
 
-![1x10 Mini Amp_3]({{ "assets/images/1x10miniamp/1x10miniamp_3.jpg" | relative_url }})
-
-
 
