@@ -3,7 +3,7 @@ layout: build
 title: "1x10 Mini Combo Amp"
 date: 2025-12-15
 image: "assets\images\1x10miniamp\1x10miniamp_1.jpg" 
-description: "A Small Amp Combo Cabinet to house a Vox Nighttrain NT5 Head"
+description: "A Small Amp Combo Cabinet to house a Vox Nightrain NT5 Head"
 category: ["Music Equipment", "Carpentry"]
 ---
 
